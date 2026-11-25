@@ -1,0 +1,105 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.39.6.
+--
+-- see: https://github.com/sol/hpack
+
+name:           exabyte-api
+version:        0.1.0
+synopsis:       API REST da loja de peças de computador Exabyte (Yesod + PostgreSQL)
+build-type:     Simple
+extra-source-files:
+    config/routes
+
+library
+  exposed-modules:
+      Application
+      Foundation
+      Handler.Avaliacao
+      Handler.Categoria
+      Handler.Cliente
+      Handler.Comum
+      Handler.Endereco
+      Handler.Externo
+      Handler.Fabricante
+      Handler.Pedido
+      Handler.Produto
+      Models
+      Seed
+      Servicos.Externos
+  other-modules:
+      Paths_exabyte_api
+  hs-source-dirs:
+      src
+  default-extensions:
+      OverloadedStrings
+      TemplateHaskell
+      QuasiQuotes
+      TypeFamilies
+      GADTs
+      DataKinds
+      DerivingStrategies
+      UndecidableInstances
+      MultiParamTypeClasses
+      RecordWildCards
+      ViewPatterns
+  ghc-options: -Wall -Wno-orphans -Wno-unused-top-binds
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , http-client
+    , http-client-tls
+    , http-types
+    , monad-logger
+    , persistent
+    , persistent-postgresql
+    , text
+    , time
+    , wai
+    , wai-cors
+    , warp
+    , yesod-core
+    , yesod-persistent
+  default-language: GHC2021
+
+executable exabyte-api
+  main-is: Main.hs
+  other-modules:
+      Paths_exabyte_api
+  hs-source-dirs:
+      app
+  default-extensions:
+      OverloadedStrings
+      TemplateHaskell
+      QuasiQuotes
+      TypeFamilies
+      GADTs
+      DataKinds
+      DerivingStrategies
+      UndecidableInstances
+      MultiParamTypeClasses
+      RecordWildCards
+      ViewPatterns
+  ghc-options: -Wall -Wno-orphans -Wno-unused-top-binds -threaded -rtsopts
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , bytestring
+    , containers
+    , exabyte-api
+    , http-client
+    , http-client-tls
+    , http-types
+    , monad-logger
+    , persistent
+    , persistent-postgresql
+    , text
+    , time
+    , wai
+    , wai-cors
+    , warp
+    , yesod-core
+    , yesod-persistent
+  default-language: GHC2021

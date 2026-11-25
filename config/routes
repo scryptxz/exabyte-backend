@@ -1,0 +1,25 @@
+-- Rotas da API REST da Exabyte
+-- Formato: <caminho> <NomeDaRota> <métodos HTTP aceitos>
+-- Cada método vira um handler: ex. GET em ProdutosR => getProdutosR
+
+/api/categorias                       CategoriasR         GET POST
+/api/categorias/#CategoriaId          CategoriaR          GET PUT DELETE
+
+/api/fabricantes                      FabricantesR        GET POST
+/api/fabricantes/#FabricanteId        FabricanteR         GET PUT DELETE
+
+/api/produtos                         ProdutosR           GET POST
+/api/produtos/#ProdutoId              ProdutoR            GET PUT DELETE
+/api/produtos/#ProdutoId/avaliacoes   ProdutoAvaliacoesR  GET POST
+/api/avaliacoes/#AvaliacaoId          AvaliacaoR          PUT DELETE
+
+/api/clientes                         ClientesR           GET POST
+/api/clientes/#ClienteId              ClienteR            GET PUT DELETE
+/api/clientes/#ClienteId/enderecos    ClienteEnderecosR   GET POST
+/api/enderecos/#EnderecoId            EnderecoR           GET PUT DELETE
+
+/api/pedidos                          PedidosR            GET POST
+/api/pedidos/#PedidoId                PedidoR             GET PUT DELETE
+
+-- Proxy para a API externa ViaCEP
+/api/externo/cep/#Text                CepR                GET

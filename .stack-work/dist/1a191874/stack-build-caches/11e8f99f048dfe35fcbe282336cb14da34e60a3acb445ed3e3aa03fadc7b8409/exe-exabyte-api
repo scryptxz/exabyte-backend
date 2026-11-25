@@ -1,0 +1,14 @@
+? C:\Users\renan\AppData\Local\Programs\stack\x86_64-windows\ghc-9.10.3\lib\x86_64-windows-ghc-9.10.3\rts-1.0.2\include\ghcversion.h
+: hash: 7038bb968ecc358729edd5d1e72a638409aaf5ea6ab13ce6ec7f253daa3b6529
+C:\Users\renan\projects\exabyte\backend\.stack-work\dist\1a191874\build\exabyte-api\autogen\Paths_exabyte_api.hs:
+  hash: fa98eddc5321c43cc6d9eee73219250010930749fc5cbec69998147919dfa7e4
+C:\Users\renan\projects\exabyte\backend\.stack-work\dist\1a191874\build\exabyte-api\autogen\cabal_macros.h:
+  hash: 0877419350624e0016d7703ddc81f1827f89cf2d53e641ad5360e2bdbbe57056
+C:\Users\renan\projects\exabyte\backend\app\Main.hs:
+  hash: 5e7193a9c887ec1fc2b744ac86ab78be7679cd0d838085700d09f6c2208d7626
+C:\Users\renan\projects\exabyte\backend\config\routes:
+  hash: c7f72b245c373930bb8b385de95c043a789fa86f5b6ddf186c2ce6293ecfc56e
+C:\Users\renan\projects\exabyte\backend\exabyte-api.cabal:
+  hash: 0ce037e00a1489d484d11239a9d3fd19387fe530d0e1c24d676489f79c85ba46
+C:\Users\renan\projects\exabyte\backend\package.yaml:
+  hash: 6fd5453fa1fb0b96d154b2faf72065fcb80c2c4e6f3addedc38444b65548da55

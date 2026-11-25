@@ -1,0 +1,58 @@
+name: exabyte-api
+version: 0.1.0
+synopsis: API REST da loja de peças de computador Exabyte (Yesod + PostgreSQL)
+
+extra-source-files:
+  - config/routes
+
+language: GHC2021
+
+default-extensions:
+  - OverloadedStrings
+  - TemplateHaskell
+  - QuasiQuotes
+  - TypeFamilies
+  - GADTs
+  - DataKinds
+  - DerivingStrategies
+  - UndecidableInstances
+  - MultiParamTypeClasses
+  - RecordWildCards
+  - ViewPatterns
+
+ghc-options:
+  - -Wall
+  - -Wno-orphans
+  - -Wno-unused-top-binds
+
+dependencies:
+  - base >= 4.7 && < 5
+  - yesod-core
+  - yesod-persistent
+  - persistent
+  - persistent-postgresql
+  - aeson
+  - text
+  - bytestring
+  - containers
+  - time
+  - http-types
+  - http-client
+  - http-client-tls
+  - wai
+  - wai-cors
+  - warp
+  - monad-logger
+
+library:
+  source-dirs: src
+
+executables:
+  exabyte-api:
+    main: Main.hs
+    source-dirs: app
+    ghc-options:
+      - -threaded
+      - -rtsopts
+    dependencies:
+      - exabyte-api
