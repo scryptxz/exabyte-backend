@@ -13,20 +13,8 @@ extra-source-files:
 
 library
   exposed-modules:
-      Application
       Foundation
-      Handler.Avaliacao
-      Handler.Categoria
-      Handler.Cliente
-      Handler.Comum
-      Handler.Endereco
-      Handler.Externo
-      Handler.Fabricante
-      Handler.Pedido
-      Handler.Produto
       Models
-      Seed
-      Servicos.Externos
   other-modules:
       Paths_exabyte_api
   hs-source-dirs:
