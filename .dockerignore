@@ -1,0 +1,5 @@
+# Artefatos de compilação locais (binários de Windows, não servem no Linux)
+.stack-work
+dist-newstyle
+.git
+*.md

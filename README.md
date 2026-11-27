@@ -41,6 +41,23 @@ dados de exemplo: categorias, fabricantes, 11 produtos, um cliente de
 demonstração com endereço e duas avaliações. Os dados de exemplo só são
 inseridos quando o banco está vazio.
 
+## Rodando com Docker
+
+```bash
+docker build -t exabyte-api .
+docker run -p 3000:3000 -e DATABASE_URL="postgresql://usuario:senha@host/exabyte" exabyte-api
+```
+
+## Hospedagem
+
+- **Banco:** qualquer PostgreSQL gerenciado (ex.: Neon). A connection string no
+  formato `postgresql://usuario:senha@host/exabyte?sslmode=require` vai na
+  variável `DATABASE_URL`.
+- **Backend:** Render (Web Service, ambiente Docker) usando o `Dockerfile` deste
+  repositório. Configure `DATABASE_URL`; a porta vem da variável `PORT`, que o
+  Render define sozinho.
+- **Frontend:** Vercel, com `VITE_API_URL` apontando para a URL pública do backend.
+
 ## Estrutura
 
 ```
